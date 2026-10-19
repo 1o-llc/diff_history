@@ -1,11 +1,19 @@
 [package]
 name = "diff_history"
-version = "0.0.1"
+version = "0.1.0"
 edition = "2021"
-rust-version = "1.56"
+rust-version = "1.89"
 authors = ["James Hunt <james@1o.business>"]
 license = "MIT OR Apache-2.0"
-description = "Reserved: the sequence of typed 1o diff records (v1.<identity>.1o.diff) for a task, loaded, validated and indexed — the record layer of task_history. The first working release follows; nothing in 0.0.1 is usable yet."
+description = "The difference between two readings of the same question: rows added and removed (a site that only moved lines is the same site) and every count before and after, read from the readings' records, and a spec's readings compared one to the next"
 repository = "https://github.com/1o-llc/diff_history"
-keywords = ["1o", "history", "changes"]
+readme = "README.md"
+keywords = ["1o", "history", "diff", "readings"]
 categories = ["development-tools"]
+include = ["src/**", "tests/**", "Cargo.toml", "LICENSE*", "README*", "CHANGELOG*"]
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# refusal codes
+liaise = "0.2.4"
