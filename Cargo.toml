@@ -1,0 +1,11 @@
+[package]
+name = "diff_history"
+version = "0.0.1"
+edition = "2021"
+rust-version = "1.56"
+authors = ["James Hunt <james@1o.business>"]
+license = "MIT OR Apache-2.0"
+description = "Reserved: the sequence of typed 1o diff records (v1.<identity>.1o.diff) for a task, loaded, validated and indexed — the record layer of task_history. The first working release follows; nothing in 0.0.1 is usable yet."
+repository = "https://github.com/1o-llc/diff_history"
+keywords = ["1o", "history", "changes"]
+categories = ["development-tools"]

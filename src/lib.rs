@@ -1,0 +1,1 @@
+//! `diff_history` — reserved. the sequence of typed 1o diff records (v1.<identity>.1o.diff) for a task, loaded, validated and indexed — the record layer of task_history. This 0.0.1 holds the name; the first working release follows.
